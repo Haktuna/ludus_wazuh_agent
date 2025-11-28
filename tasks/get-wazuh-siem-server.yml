@@ -14,5 +14,5 @@
 
 - name: Set the wazuh siem server ip
   ansible.builtin.set_fact:
-    ludus_wazuh_siem_server:
+    wazuh_manager_host:
       "10.{{ range_second_octet }}.{{ ludus_wazuh_vm_vlan }}.{{ ludus_wazuh_vm_ip_last_octet }}"
